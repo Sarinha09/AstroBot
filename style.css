@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+    background: #201b2c;
+}
+
+body * {
+    box-sizing: border-box;
+}
+/*====== Navegação ======*/
+.nav{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: flex-end;
+    background: #201b2c;}
+
+.btn-nav{
+    margin-right: 3rem;}
+.btn-nav > a button {
+    background-color: transparent;
+    color: rgb(244, 232, 255);
+    font-size: 16px;
+    font-weight: 500;
+    padding: 1.3rem;
+    border: none;
+ }
+.btn-nav > a button:hover {
+    cursor: pointer;
+    color: #916fdf;
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05); 
+    transition-duration:600ms;}
+#btn-add {
+    background:#916fdf;
+    color: white;
+    border-radius: 8px;
+    padding: 4px 20px;
+}
+
+#btn-premium{
+    color: #ffea71;
+}
+#logo > a img{
+    display: flex;
+    position: absolute;
+    left: 2%;
+    top: 2%;
+
+}
+#logo > a img:hover{
+    cursor: pointer;
+}
+/*====== Pagina inicial ======*/
+.main{ 
+    width: 100vw;
+    height: 100vh;
+    background: #201b2c ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+/*====== Inicio ======*/
+.inicio{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;}
+.inicio > h1{
+    color: white;}
+
+.img-login{
+    width: 33vw;
+}
+
+/*====== Login ======*/
+.login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+
+.card-login{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background-color: #332b46;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+.card-login > h1{
+    color: #916fdf;
+    font-weight: 800;
+    margin: 0;}
+
+.textfield {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.textfield > input { 
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 13px;
+    background-color: #7f71a3;
+    color: aliceblue;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield > label{
+    color: aliceblue;
+    margin-top: 20px;
+}
+.textfield > input::placeholder{
+    color: rgb(207, 207, 207);
+}
+.btn-cadastro{
+    width: 60%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: aliceblue;
+    background-color:#916fdf;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px #00000056;
+}
+.btn-cadastro:hover{
+    cursor: pointer;
+    background-color: #5f4994;
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05); 
+    transition-duration:600ms;
+}
+
+.label1{
+    color: rgb(202, 202, 202);
+    font-size: 10pt;
+    padding-top: 6px;}
+
+
+/*====== Outras configurações ======*/
+@media only screen and (max-width: 950px){
+    .card-login{
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .main{
+        flex-direction: column; }
+    .login{
+        width: 100%;
+        height: auto;
+    }
+    .inicio{
+        width: 100%;
+        height: auto;
+    }
+    .inicio > img {
+        width: 50vw;
+    }
+    .card-login{
+        width: 90%;
+
+    }
+    .inicio > h1{
+        display: none;
+    }
+}
